@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prompts",
+  "info": {
+    "singularName": "prompt",
+    "pluralName": "prompts",
+    "displayName": "Prompts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "richtext"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "prompts"
+    }
+  }
+}
